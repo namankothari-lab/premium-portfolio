@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TNEVE EVENT | Mumbai's Urban Discovery App & Experiences</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="TNEVE is Mumbai's premier urban exploration and discovery platform. Scavenger hunts, heritage walks, trivia nights, and corporate team events that redefine engagement. Grounded in Mumbai since 2009.">
+    <meta name="keywords" content="Mumbai events this weekend, unique things to do in Mumbai, urban exploration Mumbai, scavenger hunts Mumbai, Bandra heritage walks, trivia nights Mumbai, corporate team building Mumbai">
+    
+    <!-- Open Graph (Social Media Sharing) -->
+    <meta property="og:title" content="THE TNEVE EVENT | Mumbai's Urban Discovery Platform">
+    <meta property="og:description" content="We don't do static service menus. We create moments. Explore Mumbai's glitched routes, scavenger hunts, and high-energy social gatherings.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero_bg.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Global Decorative Glitch Overlay -->
+    <div class="glitch-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-container" id="logo-trigger">
+                <span class="logo-the">The</span>
+                <span class="logo-tneve">TNEVE</span>
+                <span class="logo-event">event</span>
+            </a>
+            <nav class="desktop-nav">
+                <button class="nav-tab active" data-target="home">Home</button>
+                <button class="nav-tab" data-target="explore">Conducted Events</button>
+                <button class="nav-tab" data-target="corporate">Corporate</button>
+                <button class="nav-tab" data-target="about">About</button>
+                <button class="nav-tab" data-target="contact">Contact</button>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer">
+        <nav class="mobile-nav-links">
+            <button class="mobile-nav-tab active" data-target="home">Home</button>
+            <button class="mobile-nav-tab" data-target="explore">Conducted Events</button>
+            <button class="mobile-nav-tab" data-target="corporate">Corporate (Pastel Shift)</button>
+            <button class="mobile-nav-tab" data-target="about">About Our Heritage</button>
+            <button class="mobile-nav-tab" data-target="contact">Contact Us</button>
+        </nav>
+    </div>
+
+    <!-- MAIN VIEW CONTAINER -->
+    <main class="view-viewport">
+        
+        <!-- SECTION 1: HOMEPAGE -->
+        <section id="view-home" class="view-section active">
+            <!-- Hero Block -->
+            <div class="hero-block">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-tagline accent-typewriter">ESTD 2009 / MUMBAI EXPERIENCES</span>
+                    <h1 class="hero-title font-condensed">THE MUMBAI YOU THINK YOU KNOW.<br><span class="glow-text">REWRITTEN.</span></h1>
+                    <p class="hero-subtitle">We don’t just host events; we create moments people talk about after. Not a tour. An experience. Built on energy, interaction, and the gritty vibes of the city.</p>
+                    
+                    <!-- Thumb-Friendly Hero CTA Actions (Anchored at the bottom) -->
+                    <div class="hero-actions bottom-reach-zone">
+                        <a href="https://wa.me/919999999999?text=Hello%20TNEVE%20HQ!%20What%20experiences%20or%20glitched%20routes%20are%20happening%20this%20weekend?" target="_blank" class="btn btn-primary btn-cyan ripple-trigger">
+                            <i class="fa-brands fa-whatsapp"></i> What's Happening This Weekend?
+                        </a>
+                        <button class="btn btn-secondary ripple-trigger" onclick="switchTab('explore')">
+                            Conducted Events
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Grid Categories -->
+            <div class="section-container">
+                <span class="section-badge accent-typewriter">01 / EXPERIENCE CATEGORIES</span>
+                <h2 class="section-heading font-condensed">OUR VIBE DOMAINS.</h2>
+                <div class="bento-grid">
+                    <!-- Bento item 1: Walks -->
+                    <div class="bento-card card-walks click-trigger" onclick="switchTab('explore')">
+                        <div class="bento-bg bg-walks"></div>
+                        <div class="bento-content">
+                            <span class="bento-tag accent-typewriter">01. WALKS</span>
+                            <h3 class="bento-title font-condensed">Walks</h3>
+                            <p class="bento-desc">Immersive city reflections hidden in plain sight.</p>
+                            <span class="bento-action-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bento item 2: Hunts -->
+                    <div class="bento-card card-hunts click-trigger" onclick="switchTab('explore')">
+                        <div class="bento-bg bg-hunts"></div>
+                        <div class="bento-content">
+                            <span class="bento-tag accent-typewriter">02. HUNTS</span>
+                            <h3 class="bento-title font-condensed">Hunts</h3>
+                            <p class="bento-desc">Clues exist. Just not where you expect. Glitched routes for the curious.</p>
+                            <span class="bento-action-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bento item 3: Social -->
+                    <div class="bento-card card-social click-trigger" onclick="switchTab('explore')">
+                        <div class="bento-bg bg-social"></div>
+                        <div class="bento-content">
+                            <span class="bento-tag accent-typewriter">03. SOCIAL</span>
+                            <h3 class="bento-title font-condensed">Social</h3>
+                            <p class="bento-desc">Ordinary evenings turned into high-energy trivia and game nights.</p>
+                            <span class="bento-action-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bento item 4: Corporate -->
+                    <div class="bento-card card-corporate click-trigger" onclick="switchTab('corporate')">
+                        <div class="bento-bg bg-corporate"></div>
+                        <div class="bento-content">
+                            <span class="bento-tag accent-typewriter">04. CORPORATE</span>
+                            <h3 class="bento-title font-condensed">Corporate</h3>
+                            <p class="bento-desc">Engagement redefined. Team building that doesn’t feel like work.</p>
+                            <span class="bento-action-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section: REBRANDED TO HIGH-IMPACT DIRECT WHATSAPP CTA -->
+            <div class="section-container bg-dark-canvas border-top-accent">
+                <span class="section-badge accent-typewriter">02 / THIS WEEKEND</span>
+                <h2 class="section-heading font-condensed">UPCOMING EXPERIENCE COORDINATES.</h2>
+                
+                <div class="whatsapp-cta-banner liquid-glass">
+                    <div class="cta-banner-content">
+                        <div class="cta-pulse-radar">
+                            <span class="pulse-ring"></span>
+                            <i class="fa-solid fa-location-crosshairs radar-icon"></i>
+                        </div>
+                        <span class="cta-tag accent-typewriter"><i class="fa-solid fa-shield-halved"></i> ACCESS RESTRICTED / PRIVATE ROUTING</span>
+                        <h3 class="cta-title font-condensed">SOMETHING INTERESTING IS HAPPENING THIS WEEKEND.</h3>
+                        <p class="cta-text">
+                            Coordinates are locked. Routes are ready. We don't publish upcoming experiences or secret walks publicly—they are reserved exclusively for the curious. 
+                            <strong>Message our HQ unit directly on WhatsApp</strong> to unlock this weekend's secret schedule, access coordinates, and claim your entry pass.
+                        </p>
+                        
+                        <div class="cta-actions bottom-reach-zone">
+                            <a href="https://wa.me/919999999999?text=Hello%20TNEVE%20HQ!%20I%20want%20to%20know%20what%20experiences%20and%20glitched%20routes%20are%20happening%20this%20weekend%3F" target="_blank" class="btn btn-primary btn-whatsapp btn-massive ripple-trigger">
+                                <i class="fa-brands fa-whatsapp"></i> Ping TNEVE HQ to Discover
+                            </a>
+                        </div>
+                        
+                        <div class="cta-meta-strip accent-typewriter">
+                            <span><i class="fa-solid fa-user-check"></i> 100% Frictionless Flow</span>
+                            <span><i class="fa-solid fa-bolt"></i> Instant Reply Under 5 Mins</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Bandra / Juhu / Fort</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conducted Events Section (Past Experiences) -->
+            <div class="section-container bg-dark-canvas">
+                <span class="section-badge accent-typewriter">03 / TRACK RECORD</span>
+                <h2 class="section-heading font-condensed">CONDUCTED EXPERIENCES.</h2>
+                <div class="events-highlight-grid" id="homepage-featured-events">
+                    <!-- Static Fallback / Hardcoded Event A -->
+                    <div class="event-card liquid-glass" data-event-id="mumbai-maze">
+                        <div class="event-card-img-wrap">
+                            <img src="assets/mumbai_maze.png" alt="The Mumbai Maze Scavenger Hunt" class="event-card-img">
+                            <span class="event-badge-megaphone price-tag"><i class="fa-solid fa-circle-check"></i> Conducted</span>
+                        </div>
+                        <div class="event-card-body">
+                            <span class="event-accent-typewriter accent-typewriter"><i class="fa-solid fa-calendar-check"></i> CONDUCTED MISSION LOG</span>
+                            <h3 class="event-card-title font-condensed">THE MUMBAI MAZE: THE GLITCHED ROUTES</h3>
+                            <p class="event-card-text">Answers are hidden in plain sight. You’ll get lost, you’ll trust the wrong clue, and you’ll definitely blame your teammate...</p>
+                            <div class="event-card-footer">
+                                <span class="event-tag-heritage"><i class="fa-solid fa-location-dot"></i> Bandra to Juhu</span>
+                                <button class="btn-card-action ripple-trigger" onclick="openEventDetails('mumbai-maze', event)">
+                                    View Recap & Story <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Static Fallback / Hardcoded Event B -->
+                    <div class="event-card liquid-glass" data-event-id="next-stop-bandra">
+                        <div class="event-card-img-wrap">
+                            <img src="assets/bandra_walk.png" alt="Next Stop: Bandra Street Market Walk" class="event-card-img">
+                            <span class="event-badge-megaphone price-tag"><i class="fa-solid fa-circle-check"></i> Conducted</span>
+                        </div>
+                        <div class="event-card-body">
+                            <span class="event-accent-typewriter accent-typewriter"><i class="fa-solid fa-circle-play"></i> RECAPS ACTIVE</span>
+                            <h3 class="event-card-title font-condensed">NEXT STOP, BANDRA: AN EXPERIENCE</h3>
+                            <p class="event-card-text">"Baccha hai Tu Mera, aaja Bandra ghooma deta hoon." You think you know Bandra. You don’t. Experience the city’s reflection...</p>
+                            <div class="event-card-footer">
+                                <span class="event-tag-heritage"><i class="fa-solid fa-location-dot"></i> Bandra West</span>
+                                <button class="btn-card-action ripple-trigger" onclick="openEventDetails('next-stop-bandra', event)">
+                                    View Recap & Story <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Us Section (3 Pillars) -->
+            <div class="section-container border-top-accent">
+                <span class="section-badge accent-typewriter">04 / WHY TNEVE</span>
+                <h2 class="section-heading font-condensed">WE DON'T DO STATIC SERVICE MENUS.</h2>
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="pillar-title font-condensed">Urban Authority Since 2009</h3>
+                        <p class="pillar-desc">Grounded in Mumbai’s history, we know the glitched routes better than your maps. 17+ years of finding the city's blindspots.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3 class="pillar-title font-condensed">Moment Makers</h3>
+                        <p class="pillar-desc">We turn city streets into content platforms. Every event is a living narrative, not just a schedule block on a corporate calendar.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-users-line"></i></div>
+                        <h3 class="pillar-title font-condensed">Community Driven</h3>
+                        <p class="pillar-desc">Your social life needed us. Built on real, high-gloss interactions, unfiltered chemistry, and the electric energy of local explorers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Teaser Shift Panel -->
+            <div class="section-container corporate-teaser-panel">
+                <div class="teaser-glass-panel">
+                    <div class="teaser-content">
+                        <span class="accent-typewriter label-shift"><i class="fa-solid fa-sliders"></i> THE PASTEL SHIFT B2B PIVOT</span>
+                        <h3 class="teaser-title font-condensed">Redefining Team Engagement.</h3>
+                        <p class="teaser-desc">Need something softer for your corporate cohort? Click below to experience the **Pastel Shift**—softening the edgy B2C grit into custom-crafted trivia, themed nights, and custom corporate scavenger hunts.</p>
+                        <button class="btn btn-secondary btn-pastel-shift-preview ripple-trigger" onclick="switchTab('corporate')">
+                            Activate Pastel Experience <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CONDUCTED EVENTS RECAPS -->
+        <section id="view-explore" class="view-section">
+            <div class="section-container header-spacing">
+                <span class="section-badge accent-typewriter">05 / EXPERIENCE RECAPS</span>
+                <h1 class="section-heading font-condensed">MISSION COORDINATES COMPLETED.</h1>
+                
+                <p style="color: var(--color-text-secondary); max-width: 700px; margin-bottom: 40px; font-size: 16px;">
+                    Take a look at the historical missions and walks that have been successfully deployed. Each card links to detailed narratives, expectations, and routes. 
+                    To book our upcoming slots, click the WhatsApp action bar below.
+                </p>
+
+                <!-- Event Grid Items -->
+                <div class="events-main-grid" id="explore-events-container">
+                    <!-- Populated via JavaScript dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: CORPORATE / TEAM EVENTS (THE PASTEL SHIFT) -->
+        <section id="view-corporate" class="view-section pastel-shift-mode">
+            <div class="pastel-gradient-bg"></div>
+            
+            <div class="section-container header-spacing">
+                <span class="section-badge accent-typewriter color-pastel-accent">06 / B2B EXPERIENCE PIVOT</span>
+                <h1 class="section-heading font-condensed color-pastel-title">ENGAGEMENT THAT ACTUALLY WORKS.</h1>
+                
+                <div class="pastel-intro-card">
+                    <div class="pastel-intro-body">
+                        <h2 class="pastel-card-title font-condensed">Softening the Edge.</h2>
+                        <p class="pastel-card-text">To prevent our gritty urban canvas from appearing too aggressive for your team-building exercises, TNEVE employs the **Pastel Shift**. We soften our high-contrast interface with muted neomorphic shapes and clay-like pastel designs while keeping the same intense focus on outcomes, bonding, and real human connection.</p>
+                    </div>
+                </div>
+
+                <!-- Offering grid -->
+                <h2 class="pastel-section-subtitle font-condensed">Corporate Offerings</h2>
+                <div class="pastel-offerings-grid">
+                    <div class="pastel-card">
+                        <div class="pastel-card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3 class="pastel-card-header font-condensed">High-Energy Trivia Nights</h3>
+                        <p class="pastel-card-desc">Move beyond awkward icebreakers. Fast-paced, hyper-engaging trivia rounds customizable with company culture checkpoints, hosted by our seasoned anchors.</p>
+                    </div>
+                    <div class="pastel-card">
+                        <div class="pastel-card-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3 class="pastel-card-header font-condensed">Custom Scavenger Hunts</h3>
+                        <p class="pastel-card-desc">Explore Mumbai with glitched clues specifically calibrated to drive teamwork, strategic navigation, and high-energy problem solving across historical districts.</p>
+                    </div>
+                    <div class="pastel-card">
+                        <div class="pastel-card-icon"><i class="fa-solid fa-shuffle"></i></div>
+                        <h3 class="pastel-card-header font-condensed">Themed Interactive Gatherings</h3>
+                        <p class="pastel-card-desc">Bespoke social scenarios designed to break down hierarchical silos and spark genuine team synergy, leaving teams talking long after the night wraps up.</p>
+                    </div>
+                </div>
+
+                <!-- Outcomes -->
+                <div class="pastel-outcomes-block">
+                    <h2 class="pastel-section-subtitle font-condensed text-center">Measurable Synergistic Outcomes</h2>
+                    <div class="outcomes-list">
+                        <div class="outcome-item">
+                            <span class="outcome-bullet"><i class="fa-solid fa-check"></i></span>
+                            <p><strong>Hierarchical Flattening:</strong> Senior leadership and junior recruits collaborate in randomized guilds, dissolving status anxieties.</p>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-bullet"><i class="fa-solid fa-check"></i></span>
+                            <p><strong>Tactical Synergy:</strong> Challenges mandate cross-functional cooperation, stimulating lateral problem-solving models.</p>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-bullet"><i class="fa-solid fa-check"></i></span>
+                            <p><strong>Organic Content Channels:</strong> Teams generate photos/memories, offering natural branding for internal recruitment initiatives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center button-container">
+                        <button class="btn btn-primary btn-pastel-shift ripple-trigger" onclick="switchTab('contact', 'corporate-booking')">
+                            Request Corporate Proposal <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: ABOUT PAGE -->
+        <section id="view-about" class="view-section pastel-shift-mode">
+            <div class="pastel-gradient-bg"></div>
+            
+            <div class="section-container header-spacing">
+                <span class="section-badge accent-typewriter color-pastel-accent">07 / THE HERITAGE</span>
+                <h1 class="section-heading font-condensed color-pastel-title">THE REFLECTION BEHIND EVERY EVENT.</h1>
+                
+                <div class="about-hero-grid">
+                    <div class="about-main-text">
+                        <h2 class="about-story-title font-condensed">Translating Urban Energy Since 2009.</h2>
+                        <p>Established in 2009, TNEVE was born out of a desire to translate Mumbai's electric, gritty urban energy into a digital-first discovery ecosystem. We realized early on that people don't want static corporate schedules or boring bus tours—they crave intense, tactile moments of physical connection within the city they live in.</p>
+                        <p>Our philosophy is rooted in "Situational Experiences" that treat streets, beaches, alleys, and neighborhood landmarks as active participants in a narrative. Whether through hidden clue codes, glitched navigation maps, or interactive group trivia, we show you the hidden reflections of the city you think you know.</p>
+                        
+                        <div class="about-stats-strip">
+                            <div class="stat-unit">
+                                <span class="stat-val">2009</span>
+                                <span class="stat-lbl accent-typewriter">ESTABLISHED</span>
+                            </div>
+                            <div class="stat-unit">
+                                <span class="stat-val">17k+</span>
+                                <span class="stat-lbl accent-typewriter">EXPLORERS</span>
+                            </div>
+                            <div class="stat-unit">
+                                <span class="stat-val">500+</span>
+                                <span class="stat-lbl accent-typewriter">EXPERIENCES</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-media-box">
+                        <div class="about-img-wrap">
+                            <img src="assets/pastel_bg.png" alt="TNEVE 3D Soft shapes" class="about-media-img neomorphic-pastel-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-values-section">
+                    <h2 class="pastel-section-subtitle font-condensed text-center">Our Core Vibe Coordinates</h2>
+                    <div class="vibes-flex">
+                        <div class="vibe-coordinate">
+                            <span class="vibe-label font-condensed">Urban Grit</span>
+                            <p class="vibe-detail">Grounding our exploration in raw reality. No filtered tourist spots, only the authentic local routes.</p>
+                        </div>
+                        <div class="vibe-coordinate">
+                            <span class="vibe-label font-condensed">Frictionless Flow</span>
+                            <p class="vibe-detail">Ensuring our tech serves as a silent partner—enabling instant mobile bookings and effortless coordination.</p>
+                        </div>
+                        <div class="vibe-coordinate">
+                            <span class="vibe-label font-condensed">Anti-Template</span>
+                            <p class="vibe-detail">Rejecting standard service grids. Every route we map is customized and updated continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: CONTACT PAGE -->
+        <section id="view-contact" class="view-section">
+            <div class="section-container header-spacing">
+                <span class="section-badge accent-typewriter">08 / CONNECT</span>
+                <h1 class="section-heading font-condensed">READY FOR YOUR NEXT MOVE?</h1>
+                
+                <div class="contact-grid">
+                    <!-- Info Box -->
+                    <div class="contact-info-block liquid-glass">
+                        <h2 class="contact-subtitle font-condensed">Get In The Loop</h2>
+                        <p class="contact-info-desc">Have a question about an upcoming hunt? Want us to design a custom experience for your startup team? Drop us a signal, we monitor all coordinates.</p>
+                        
+                        <div class="coordinates-list">
+                            <div class="coord-item">
+                                <span class="coord-icon"><i class="fa-solid fa-location-crosshairs"></i></span>
+                                <div class="coord-details">
+                                    <span class="coord-label accent-typewriter">COORDINATES</span>
+                                    <span class="coord-val">Bandra West, Mumbai, IN</span>
+                                </div>
+                            </div>
+                            <div class="coord-item">
+                                <span class="coord-icon"><i class="fa-brands fa-instagram"></i></span>
+                                <div class="coord-details">
+                                    <span class="coord-label accent-typewriter">INSTAGRAM</span>
+                                    <a href="https://instagram.com/tneve.event" target="_blank" class="coord-val glow-hover">@tneve.event</a>
+                                </div>
+                            </div>
+                            <div class="coord-item">
+                                <span class="coord-icon"><i class="fa-solid fa-building"></i></span>
+                                <div class="coord-details">
+                                    <span class="coord-label accent-typewriter">HQ ADDRESS</span>
+                                    <span class="coord-val">Flat 32, Samatadeep Co-op, 25th Road, Bandra (W)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-block liquid-glass">
+                        <form id="tneve-contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group-custom">
+                                <label for="form-name" class="custom-label accent-typewriter">YOUR NAME</label>
+                                <input type="text" id="form-name" required placeholder="Type name..." class="custom-input">
+                            </div>
+                            <div class="form-group-custom">
+                                <label for="form-email" class="custom-label accent-typewriter">COORDINATE EMAIL</label>
+                                <input type="email" id="form-email" required placeholder="name@domain.com" class="custom-input">
+                            </div>
+                            <div class="form-group-custom">
+                                <label for="form-subject" class="custom-label accent-typewriter">INTEREST FIELD</label>
+                                <select id="form-subject" class="custom-select">
+                                    <option value="general">General Exploration Inquiry</option>
+                                    <option value="corporate">Corporate "Pastel Shift" Booking</option>
+                                    <option value="mumbai-maze">The Mumbai Maze Registration</option>
+                                    <option value="bandra-walk">Next Stop Bandra Booking</option>
+                                </select>
+                            </div>
+                            <div class="form-group-custom">
+                                <label for="form-message" class="custom-label accent-typewriter">TRANSMISSION MESSAGE</label>
+                                <textarea id="form-message" required rows="5" placeholder="Share your plans..." class="custom-textarea"></textarea>
+                            </div>
+                            
+                            <div class="button-wrap">
+                                <button type="submit" class="btn btn-primary btn-cyan btn-full ripple-trigger">
+                                    Send Transmission <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- EVENT DETAIL OVERLAY (SCROLLYTELLING VIEW MODE) -->
+    <div id="event-detail-modal" class="detail-modal-overlay">
+        <!-- Close button at the top reach zone -->
+        <button class="modal-close-btn" aria-label="Close details" onclick="closeEventDetails()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-viewport" id="modal-scroll-container">
+            <!-- Header Spacer for mobile thumbs -->
+            <div class="modal-header-space"></div>
+
+            <div class="modal-card liquid-glass">
+                
+                <!-- 1. Visual Hero -->
+                <div class="modal-visual-hero" id="modal-hero-container">
+                    <img src="" alt="Event visual hero" id="modal-hero-img" class="modal-hero-img">
+                    <div class="modal-hero-glow"></div>
+                    <div class="modal-hero-title-wrap">
+                        <span class="modal-badge-megaphone price-tag id-yellow-tag" id="modal-price-badge">Conducted</span>
+                        <h2 class="modal-title font-condensed" id="modal-event-title">EVENT TITLE</h2>
+                        <span class="modal-subtitle accent-typewriter" id="modal-event-subtitle">SUBTITLE THEME</span>
+                    </div>
+                </div>
+
+                <div class="modal-body-content">
+                    
+                    <!-- 2. Quick Info Grid -->
+                    <div class="modal-quick-info">
+                        <div class="info-cell">
+                            <span class="cell-label accent-typewriter">COORDINATE</span>
+                            <span class="cell-value" id="modal-info-location"><i class="fa-solid fa-location-dot"></i> Bandra</span>
+                        </div>
+                        <div class="info-cell">
+                            <span class="cell-label accent-typewriter">TIME FRAME</span>
+                            <span class="cell-value" id="modal-info-time"><i class="fa-solid fa-clock"></i> 120 Mins</span>
+                        </div>
+                        <div class="info-cell font-color-yellow">
+                            <span class="cell-label accent-typewriter">MISSION STATUS</span>
+                            <span class="cell-value" id="modal-info-status">Conducted</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. The Story (Scrollytelling Description) -->
+                    <div class="modal-story-section">
+                        <h3 class="modal-section-title font-condensed">The Narrative.</h3>
+                        <p class="modal-story-text" id="modal-story-desc">Event story text goes here...</p>
+                    </div>
+
+                    <!-- 4. Expectations -->
+                    <div class="modal-expectations-section">
+                        <h3 class="modal-section-title font-condensed">What Happened.</h3>
+                        <ul class="expectations-list" id="modal-expectations-list">
+                            <!-- Populated dynamically -->
+                        </ul>
+                    </div>
+
+                    <!-- 5. Logistics Grid -->
+                    <div class="modal-logistics-section">
+                        <h3 class="modal-section-title font-condensed">Mission Logistics.</h3>
+                        <div class="logistics-table">
+                            <div class="log-row">
+                                <span class="log-lbl accent-typewriter">LAUNCH POINT</span>
+                                <span class="log-val" id="modal-log-start">Start Location</span>
+                            </div>
+                            <div class="log-row">
+                                <span class="log-lbl accent-typewriter">TERMINAL POINT</span>
+                                <span class="log-val" id="modal-log-end">End Location</span>
+                            </div>
+                            <div class="log-row">
+                                <span class="log-lbl accent-typewriter">SCALE LIMIT</span>
+                                <span class="log-val" id="modal-log-capacity">Capacity limits</span>
+                            </div>
+                            <div class="log-row">
+                                <span class="log-lbl accent-typewriter">MISSION STOPS</span>
+                                <span class="log-val" id="modal-log-stops">Stops</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spacer to let scroll clear the bottom CTA -->
+            <div class="modal-footer-space"></div>
+        </div>
+
+        <!-- 6. Sticky Floating Conversion Tool (Stay Notified / Booking for next slot via WhatsApp) -->
+        <div class="modal-sticky-footer bottom-reach-zone">
+            <a href="" class="btn btn-primary btn-whatsapp btn-book ripple-trigger" id="modal-book-now-btn" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Stay Notified for Next Concurrence
+            </a>
+        </div>
+    </div>
+
+    <!-- Floating Actions FAB -->
+    <a href="https://wa.me/919999999999?text=Hello%20Tneve%20Events!%20I%20want%20to%20know%20what%20experiences%20are%20happening%20this%20weekend!" target="_blank" class="floating-fab fab-whatsapp" aria-label="Connect via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Book Now button fallback for listing tabs -->
+    <div class="sticky-explore-cta bottom-reach-zone" id="sticky-explore-box" style="display: none;">
+        <a href="https://wa.me/919999999999?text=Hello%20TNEVE%20HQ!%20What%20experiences%20are%20happening%20this%20weekend%3F" target="_blank" class="btn btn-primary btn-cyan btn-full ripple-trigger">
+            <i class="fa-brands fa-whatsapp"></i> Pin HQ for This Weekend
+        </a>
+    </div>
+
+    <!-- MAIN APP CONTROLLER -->
+    <script src="app.js"></script>
+</body>
+</html>
